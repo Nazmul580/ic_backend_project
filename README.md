@@ -89,3 +89,12 @@ To deploy the project on **Vercel**:
 ## Author
 Developed by **Nazmul Hossen**.
 
+## Test Credentials
+For testing private routes, use the following login credentials:
+```json
+{
+  "email": "nazmul@nazmul.com",
+  "password": "12345678"
+}
+```
+
