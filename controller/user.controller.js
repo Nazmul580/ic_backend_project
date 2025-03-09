@@ -20,9 +20,8 @@ exports.updateUser = async (req, res) => {
   const { username, email, password } = req.body;
 
   try {
-    const user = await User.find({ id }).toarray();
-    if (!user) return res.status(404).json({ message: "User not found" });
-    const updatedUser = await User.update(id, {
+    const user = await User.findById(id);
+    const updatedUser = await User.findByIdAndUpdate(id, {
       username: username || user.username,
       email: email || user.email,
       password: password || user.password,
